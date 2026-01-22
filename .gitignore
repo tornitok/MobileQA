@@ -1,0 +1,34 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+.venv/
+venv/
+ENV/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Environment variables
+.env
+
+# Test reports
+reports/
+allure-results/
+allure-report/
+screenshots/
+
+# Logs
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+apps/android/*.apk
+
