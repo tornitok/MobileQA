@@ -25,7 +25,6 @@ def get_page_source():
     print("\n" + "=" * 60)
     print("PAGE SOURCE (XML иерархия элементов):")
     print("=" * 60 + "\n")
-
     # Получаем XML-структуру экрана
     xml = d.dump_hierarchy()
     print(xml)

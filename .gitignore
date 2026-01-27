@@ -29,6 +29,4 @@ screenshots/
 # OS files
 .DS_Store
 Thumbs.db
-
-apps/android/*.apk
-
+page_source.xml
