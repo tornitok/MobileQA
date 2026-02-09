@@ -30,9 +30,9 @@ class SimpleFragmentPage(BasePage):
         """Открыть экран с WebView"""
         self.click(self.BUTTON_2)
 
-    def enter_text(self):
-        """Открыть экран с простым фрагментом"""
-        self.send_keys(self.EDIT_FIELD, "Hello World!")
+    def enter_text(self, text: str = "Hello World!"):
+        """Ввести текст в поле"""
+        self.send_keys(self.EDIT_FIELD, text)
 
     def text_is_displayed(self, expected_text="Hello World!"):
         """Проверить что текст в поле соответствует ожидаемому"""

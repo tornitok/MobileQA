@@ -11,6 +11,7 @@ class HomePage(BasePage):
     WEBVIEW_BUTTON = (AppiumBy.ID, "com.kaspersky.kaspressample:id/activity_main_webview_sample_button")
     MAIN_SCREEN_TEXT = (AppiumBy.ID, "com.kaspersky.kaspressample:id/activity_main_title")
     SIMPLE_FRAGMENT_BUTTON = (AppiumBy.ID, "com.kaspersky.kaspressample:id/activity_main_simple_sample_button")
+    FLAKY_BUTTON = (AppiumBy.ID, "com.kaspersky.kaspressample:id/activity_main_flaky_sample_button")
 
     def __init__(self, driver):
         super().__init__(driver)
@@ -28,3 +29,9 @@ class HomePage(BasePage):
         """Открыть экран с простым фрагментом"""
         self.click(self.SIMPLE_FRAGMENT_BUTTON)
         return SimpleFragmentPage(self.driver)
+
+    def open_flaky_screen(self):
+        """Открыть экран с Flaky тестами"""
+        self.click(self.FLAKY_BUTTON)
+        from pages.flaky_page import FlakyPage
+        return FlakyPage(self.driver)

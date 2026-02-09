@@ -3,5 +3,7 @@ python-dotenv==1.0.0
 allure-pytest==2.13.2
 pytest-html==4.1.1
 pytest==7.4.3
+pytest-rerunfailures>=16.0
 uiautomator2>=3.0.0
+faker>=22.0.0
 
